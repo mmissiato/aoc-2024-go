@@ -7,7 +7,7 @@ import (
 )
 
 func GetFileContent(name string) string {
-	b, err := os.ReadFile("input.txt")
+	b, err := os.ReadFile(name)
 
 	if err != nil {
 		panic(err)
@@ -33,3 +33,4 @@ func String2Int(s string) int {
 
 	return i
 }
+
